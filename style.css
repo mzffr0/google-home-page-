@@ -1,0 +1,64 @@
+
+:root{
+  --bg:#202124;
+  --btn: #303134;
+}
+body{
+display:flex;
+justify-content:center;
+align-items: center;
+width: 100%;
+height: 100vh;  
+background-color:var(--bg);  
+ flex-direction: column; 
+}
+.box{
+  margin-top: 1vh;
+  border-radius: 2em;
+  width: 70%;
+  height: 50px;
+  border: 1px solid var(--btn);
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.box:hover{
+  background-color:var(--btn)
+}
+.box:hover .input{
+  background-color:var(--btn)
+}
+.input{
+  color: white;
+  font-size:1.3em;
+  border:none;
+  background-color:var(--bg) ;
+  width:calc(60% - 30px)
+}
+.input:focus{
+  outline: none;
+}
+.search{
+  width: 5%;
+  padding: 16px;
+  font-size: 1.3em;
+  color: white;
+}
+.keyboard{
+  width: calc( 5% - 5px );
+  padding: 16px;
+  font-size: 1.3em;
+  color: white;  
+}
+.mic{
+  width: calc( 5% - 5px );
+  padding: 16px;
+  font-size: 1.3em;
+  color: white;  
+}
+.camera{
+    width: calc( 5% - 5px );
+  padding: 16px;
+  font-size: 1.3em;
+  color: white;  
+}
